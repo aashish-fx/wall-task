@@ -15,7 +15,6 @@
   gap: 50px;
   isolation: isolate;
   /* Cont/Card/OnSurface */
-  max-width: 500px;
   background: #111111;
   width: 201px;
   
@@ -108,13 +107,34 @@ flex-grow: 0;
   order: 0;
   flex-grow: 0;
 }
+.grad{
+  background: rgba(37, 181, 213, 0.1);
+  /* background: #fff; */
+/* filter: blur(25px); */
+width: 58px;
+height: 58px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ellipse{
+  position: absolute;
+width: 174px;
+height: 174px;
+left: -58px;
+top: -69px;
+
+/* Activities/Bought_10% */
+
+background: rgba(37, 181, 213, 0.1);
+filter: blur(25px);
+
+}
 .ens_image{
   width: 52px;
   height: 52px;
-  
-  
-
-  background: url('https://picsum.photos/id/237/200/300'), #2C2C2C;
+  filter: none !important;
+  /* background: url('https://picsum.photos/id/237/200/300'), #2C2C2C; */
   border-radius: 8px;
   background-position: center;
   background-size: cover;

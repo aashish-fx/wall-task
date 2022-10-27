@@ -8,8 +8,8 @@ function App() {
     <div className='App_container'>
         <div className="App">
               <div className='upperpart'>
-                  <div className='ens_image'>
-                  </div>
+                  <div className='ellipse'></div>
+                  <img src='https://picsum.photos/id/237/200/300' className='ens_image' ></img>
                   <div>
                     <div className='ens_heading'>
                       <span className='ens_heading_span1'>{title}</span>
