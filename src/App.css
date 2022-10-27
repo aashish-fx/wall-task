@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,200&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 50px;
+  isolation: isolate;
+  /* Cont/Card/OnSurface */
+  max-width: 500px;
+  background: #111111;
+  width: 201px;
+  
+  height: 148px;
+  border-radius: 16px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.upperpart{
+  width: 100%;
+  display: flex;
+  gap:16px;
+  position: relative;
+}
+.ens_heading{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+.ens_heading_span1{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+padding-bottom: 15px;
+/* identical to box height, or 143% */
+/* Text/High */
+color: #FAFAFA;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.ens_heading_span2{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+
+/* Activities/Bought */
+
+color: #4BDFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.lowerpart{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.lowerpart_div1,.lowerpart_div2{
+  display: flex;
+  
+  justify-content: space-between;
+}
+.lowerpart_div1{
+  padding-bottom: 7px;
+}
+.lowerpart_span1{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.05em;
+
+  /* Text/Medium */
+
+  color: #A2A2A2;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.ens_image{
+  width: 52px;
+  height: 52px;
+  
+  
+
+  background: url('https://picsum.photos/id/237/200/300'), #2C2C2C;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.lowerpart_image{
+  width: 15px;
+  height: 15px;
+
+  background: url('https://picsum.photos/seed/picsum/200/100'), #2C2C2C;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.lowerpart_inner_div1{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lowerpart_span2{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+
+  /* Text/High */
+
+  color: #FAFAFA;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .lowerpart_div2_span2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    
+    
+    /* Sem/Success/OnSurface */
+    
+    color: #19ED7B;
+    position: relative;
+    
+    /* Inside auto layout */
+    right: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
-}
+  .lowerpart_div2_span1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+
+    /* Text/Medium */
+
+    color: #A2A2A2;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
